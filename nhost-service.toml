@@ -1,0 +1,16 @@
+name = 'cat-generator'
+
+[image]
+image = 'nhost/cat-generator:0.0.1'
+
+[[ports]]
+port = 5000
+type = 'http'
+publish = true
+
+[resources]
+replicas = 2
+
+[resources.compute]
+cpu = 2000
+memory = 4096
